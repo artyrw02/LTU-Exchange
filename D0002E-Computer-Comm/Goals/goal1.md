@@ -9,8 +9,8 @@ Here's an idea: why don't we take `SuperiorProject` and turn it into ` **Reasona
 
 Check out this neat program I wrote:
 
-```
-x = 0
-x = 2 + 2
-what is x
-```
+- [ ] a task list item
+- [?] list syntax required
+- [ ] normal **formatting**, @mentions, #1234 refs
+- [ ] incomplete
+- [x] completed
