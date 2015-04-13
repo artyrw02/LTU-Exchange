@@ -1,7 +1,6 @@
 #### Summary Chapter 3 - part 2
 ##### From book pages <230 - 269>
-
-###### Connection-Oriented Transport: TCP
+##### Connection-Oriented Transport: TCP
 
 
 * **TCP (Transmission Control Protocol) basic characteristics**:
@@ -42,7 +41,7 @@
 				* Update SendBase with ACK value.
 				* Restarts the timer if there currently are any not-yet-acknowledged segments.
 			
-			* **Fast retransmit** is a method used to retransmit the missing segment before the segment’s timer expires.
+		* Fast retransmit is a method used to retransmit the missing segment before the segment’s timer expires.
 
 	* **Flow Control**: 
 		* Eliminates the possibility of the sender overflowing the receiver’s buffer.		
