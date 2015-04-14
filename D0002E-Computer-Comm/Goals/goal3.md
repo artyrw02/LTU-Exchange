@@ -1,19 +1,20 @@
 #### Summary Chapter 3 - part 2
-##### From book pages <230 - 269>
+##### From book pages <230 - 282>
 ##### Connection-Oriented Transport: TCP
 
 
 * **TCP (Transmission Control Protocol) basic characteristics**:
 	* Connected-oriented.
-	* Reliable data transfer
+	* Reliable data transfer.
 	* Flow control. 
 	* Acknowledgments. 
 	* Timers (timeout/retransmit mechanism) to recover from lost segments.
 	* Data follows a sequence and arrive in a specific order.
 	* Congestion Control.
 	* Used for multimedia applications along with UDP.
-	* Provides full-duplex service
-	* Point-to-point
+	* Provides full-duplex service.
+	* Point-to-point.
+	
 
 	* **Structure of TCP Segment**:
 
@@ -49,6 +50,33 @@
 		* rwnd is set to the amount of spare room in the buffer: 'rwnd = RcvBuffer – [LastByteRcvd – LastByteRead]'.
 
 	* **TCP Connection Management**
-
-
+		* **Establish a connection between client - server.**
+			*Three-way shaking*
+			1. Client opens the connection by sending a 'SYN' specifing random sequence number.
+			2. Server receives packet and sends 'SYN + ACK'.
+			3. Client receives the 'SYN + ACK' and replies with an 'ACK'.
+			
+		* **Closing a connection between client - server.**
+			Two states:
+			1. Client sends a segment 'FIN'. Server replies with an 'ACK'.
+			2. Server sends a segment 'FIN'. Client replies with an 'ACK' waits an amount of time between '30sec to 2 mins' and then connection is closed.
+			
+* **Principles of Congestion Control**:
+	* Causes:
+		- Occurs when a link is carrying so much data than the capacity of the network can handle.
+	* Effects:
+		- Queueing delay, packet loss or the blocking of new connections.		
+	* Congestion and flow control are not the same.
+	* Congestion-control approaches:
+		- end-end congestion control
+		- network-assisted congestion control
+	* Slow Start:
+		- When a TCP connection begins, cwnd = small value of 1 MSS  and increases by 1 MSS every time a transmitted segment is first acknowledged.
+	* Fairness:
+		- Used to determine whether end systems or applications are receiving a fair share of system resources. 
+		- Used to avoid congestion collapse.
+		
+	
+	
+	
 	
