@@ -1,5 +1,5 @@
--#### Goal 4
--##### Work related to Summary of chapter 4 from book  Part 1.
+#### Goal 4
+##### Work related to Summary of chapter 4 from book  Part 1.
 
 * **Network layer services**:
 	- Guaranteed delivery.	
