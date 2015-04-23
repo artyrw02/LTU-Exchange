@@ -1,5 +1,5 @@
-#### Goal 4
-##### Work related to Summary of chapter 4 from book  Part 1.
+-#### Goal 4
+-##### Work related to Summary of chapter 4 from book  Part 1.
 
 * **Network layer services**:
 	- Guaranteed delivery.	
@@ -41,16 +41,17 @@
 			- Switching techniques: Memory, Crossbar, Bus.
 			- Packets can be forwarded one at a time.
 		* Output ports.
-		* buffering size = B = RTT * C/√N
-			where: 	amount of buffering (B) 
-					round-trip time (RTT) 
-					link capacity (C).
+		* buffering size = `B = RTT * C/√N`
+                 where:
+					* amount of buffering (B) 
+					* round-trip time (RTT) 
+					* link capacity (C).
 	* Routing processor & memory (executes routing protocols, controls routing tables).			
-			- The forwarding table is computed and updated by the routing processor.
+			* The forwarding table is computed and updated by the routing processor.
 * Components of network layer:
-		- IP protocol = IPv4 / IPv6.
-		- Routing protocols = path selection with RIP, OSPF or BGP.
-		- ICMP protocol = error reporting and router “signaling”.
+		* IP protocol = IPv4 / IPv6.
+		* Routing protocols = path selection with RIP, OSPF or BGP.
+		* ICMP protocol = error reporting and router “signaling”.
 			
 	* maximum transmission unit (MTU).		
 	* Framentation = break one IP datagram into more IP datagrams.
@@ -71,3 +72,4 @@
 		- dual-stack approach.
 		- Tunneling as an alternative of dual-stack approach.
 	* IP security = Virtual Private Networks (VPNs).
+	
