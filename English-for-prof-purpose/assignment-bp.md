@@ -16,7 +16,7 @@
 		
 		
 				
-##### Products and Services SECTION 3
+**Products and Services SECTION 3**
 
 1. Challenges (application development service): <---
 	- Challenges will be used as the starting point for the people who wants to be motivated in order to start developing their applications/algorithms which then, can be stored in their projects portfolio.
@@ -34,7 +34,7 @@
 5. Emulator service:
 	- Emulator will be able to run the generated applications stored in the users portfolio allowing other people to test them, learn about the developers experience and abilities, and finally the possibility to give feedback to the developer/owner of the applications.
 	
-##### Market Analysis Summary SECTION 4 TO 7
+**Market Analysis Summary SECTION 4 TO 7**
 	SECTION 4 AND 5
 	`"Name of our business"` will initialy focus on individual customers, universities, as students are starting to learn about programming, and will like to be motivated and challenged while they learn about the development of different applications.
 	
@@ -55,8 +55,8 @@
 	
 	SECTION 6
 	
-##### Strategy Implementation
-	##### Promotion Strategy
+**Strategy Implementation**
+	**Promotion Strategy**
 	
 	Our target client comes mainly from universities, for this reason, we will market and promote our services by using the direct marketing strategy as our **atraer** is to look for students in our network that will be interested in challenge their developing skills and share their work with others along with the word-of-mouth. 
 	
