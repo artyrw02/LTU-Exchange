@@ -12,7 +12,7 @@ Consider a network topology on the figure above. Do the address planning, assign
   1. 192.30.147.249/29 -> 255.255.255._ _ _ _ (_) _ _ _ -> **`255.255.255.248`**
   2. /29 -> 255.255.255.1 1 1 1 1 1 [0 0 0] 3 available for hosts -> 2^3 - 2 = 6 ip availables so answer **` YES`**.
   3. **`NAT`**
-  4. Class B -> 172.237.147.0  /16 -> 2^16 connections.
+  4. Class B -> 172.237.147.0  /16 -> **` 2^16 connections.`**
 
 
 ##### 2. Distance vector routing
