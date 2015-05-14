@@ -45,6 +45,7 @@ Consider sending a 3000 byte datagram into a link that has an MTU of 500 bytes. 
 2. What are their characteristics?
 
 **ANSWERS----------------------------------------------------------------------------------------------**
+
 3000 byte datagram -> (20 bytes of IP header + 2980 IP payload)
 MTU = 500 bytes
 Id num = 422
@@ -52,16 +53,22 @@ Id num = 422
 [3000 - 20]/[500 - 20] = 6,20 ~ 7 fragments
 
 8 bit chunk -> 480 / 80 -> increment of offset by 60.
-|Number|Size   |ID   |Offset   |Flag   |
-|---|---|---|---|---|
-|1   |480 bits + 20   |422   | 0  | 1  |
-|2  |480 bits + 20   | 422  |  60 | 1  |
-|3   |480 bits + 20   | 422  |  120 | 1  |
-|4   |480 bits + 20   |422   | 180  | 1  |
-|5   |480 bits + 20   |422   | 240  | 1  |
-|6   |480 bits + 20   |422   | 300  | 1  |
-|7   |2980 - (480 * 6) = 100 + 20   | 422  | 360  | 0  |
 
+| Number | Size   | ID   | Offset   | Flag   |
+| --- | --- | --- | --- | --- |
+| 1   | 480 bits + 20   | 422   | 0  | 1  |
+| 2   | 480 bits + 20   | 422  |  60 | 1  |
+| 3   | 480 bits + 20   | 422  |  120 | 1  |
+| 4   | 480 bits + 20   | 422   | 180  | 1  |
+| 5   | 480 bits + 20   | 422   | 240  | 1  |
+| 6   | 480 bits + 20   | 422   | 300  | 1  |
+| 7   | 2980 - (480 * 6) = 100 + 20   | 422  | 360  | 0  |
+
+
+| Name | Description          |
+| ------------- | ----------- |
+| Help      | Display the help window.|
+| Close     | Closes a window     |
 ##### 4. IP overhead 
 ##### 5. Prefix notation
 ##### 6. True or False 
