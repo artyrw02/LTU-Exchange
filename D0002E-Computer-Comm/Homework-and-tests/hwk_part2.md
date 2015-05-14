@@ -32,11 +32,11 @@ Consider the network fragment  shown above. Router x has only two attached neigh
 2. cost change for either c(x,w) or c(x,y) will inform:
 	- c(x,w) = 2
 	- c(x,y) = 5	
-	**`c(x,w) > 6 -> will  inform change**`	
+	**` c(x,w) > 6 -> will  inform change**`	
 3. cost change for either c(x,w) or c(x,y) will not inform:
 	- c(x,w) = 2
 	- c(x,y) = 5
-	**`c(x,y) > 1 -> will not inform change**`
+	**` c(x,y) > 1 -> will not inform change**`
 	
 ##### 3. Fragmentation
 Consider sending a 3000 byte datagram into a link that has an MTU of 500 bytes. Suppose the original datagram is stamped with the identification number 422. Answer the following questions. The correct answer gives you 5 points, the incorrect one -5 points, the "I am not sure" gives you 0 points.
@@ -52,15 +52,15 @@ Id num = 422
 [3000 - 20]/[500 - 20] = 6,20 ~ 7 fragments
 
 8 bit chunk -> 480 / 80 -> increment of offset by 60.
-|Number|Size   |ID   |Offset   |Flag   |
-|---|---|---|---|---|
-|1   |480 bits + 20   |422   | 0  | 1  |
-|2  |480 bits + 20   | 422  |  60 | 1  |
-|3   |480 bits + 20   | 422  |  120 | 1  |
-|4   |480 bits + 20   |422   | 180  | 1  |
-|5   |480 bits + 20   |422   | 240  | 1  |
-|6   |480 bits + 20   |422   | 300  | 1  |
-|7   |2980 - (480 * 6) = 100 + 20   | 422  | 360  | 0  |
+| Number | Size   | ID   | Offset   | Flag   |
+| --- | --- | --- | --- | --- |
+| 1   | 480 bits + 20   | 422   | 0  | 1  |
+| 2   | 480 bits + 20   | 422  |  60 | 1  |
+| 3   | 480 bits + 20   | 422  |  120 | 1  |
+| 4   | 480 bits + 20   | 422   | 180  | 1  |
+| 5   | 480 bits + 20   | 422   | 240  | 1  |
+| 6   | 480 bits + 20   | 422   | 300  | 1  |
+| 7   | 2980 - (480 * 6) = 100 + 20   | 422  | 360  | 0  |
 
 ##### 4. IP overhead 
 Suppose an application generates chunks of 40 bytes data every 20 milliseconds, and each chunck gets encapsulated in a TCP segment and then an IP datagram. What percentage of each datagram will be overhead, and  what percentage will be application data?
