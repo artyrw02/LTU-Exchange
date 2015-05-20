@@ -55,15 +55,15 @@ Consider sending a 3000 byte datagram into a link that has an MTU of 500 bytes. 
 > 
 > * 8 bit chunk -> 480 / 80 -> increment of offset by 60.
 
-> * | Number	| Size   					| ID  | Offset  | Flag |
-> * | -------	| -----------------------	| --- | --- 	| ---  |
-> * | 1   	| 480 bits + 20 				| 422 | 0  		| 1  |
-> * | 2   	| 480 bits + 20   				| 422 | 60 		| 1  |
-> * | 3   	| 480 bits + 20   				| 422 | 120 	| 1  |
-> * | 4   	| 480 bits + 20   				| 422 | 180  	| 1  |
-> * | 5   	| 480 bits + 20   				| 422 | 240  	| 1  |
-> * | 6   	| 480 bits + 20   				| 422 | 300  	| 1  |
-> * | 7   	| 2980 - (480 * 6) = 100 + 20   | 422 | 360  	| 0  |
+| Number	| Size   					| ID  | Offset  | Flag |
+| -------	| -----------------------	| --- | --- 	| ---  |
+| 1   	| 480 bits + 20 				| 422 | 0  		| 1  |
+| 2   	| 480 bits + 20   				| 422 | 60 		| 1  |
+| 3   	| 480 bits + 20   				| 422 | 120 	| 1  |
+| 4   	| 480 bits + 20   				| 422 | 180  	| 1  |
+| 5   	| 480 bits + 20   				| 422 | 240  	| 1  |
+| 6   	| 480 bits + 20   				| 422 | 300  	| 1  |
+| 7   	| 2980 - (480 * 6) = 100 + 20   | 422 | 360  	| 0  |
 
 ##### 4. IP overhead 
 Suppose an application generates chunks of 40 bytes data every 20 milliseconds, and each chunck gets encapsulated in a TCP segment and then an IP datagram. What percentage of each datagram will be overhead, and  what percentage will be application data?
