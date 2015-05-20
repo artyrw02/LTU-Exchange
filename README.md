@@ -1,2 +1,2 @@
-# LTU-Exchage
+# LTU-Exchange
 Courses of LTU 
